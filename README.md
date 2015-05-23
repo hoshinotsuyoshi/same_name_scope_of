@@ -1,6 +1,37 @@
 # SameNameScopeOf
 
-TODO: Write a gem description
+Able to include or extend the same name module
+
+## Usage
+
+```
+class A
+  class B
+  end
+end
+
+module C
+  module B
+    def b?
+      true
+    end
+  end
+end
+
+A::B.new.b?
+#=> NoMethodError
+
+require 'same_name_scope_of'
+
+class A::B
+  extend SameNameScopeOf
+  include_same_name_scope_of(C)
+end
+
+A::B.new.b?
+#=> true
+
+```
 
 ## Installation
 
@@ -15,10 +46,6 @@ And then execute:
 Or install it yourself as:
 
     $ gem install same_name_scope_of
-
-## Usage
-
-TODO: Write usage instructions here
 
 ## Contributing
 
