@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = SameNameScopeOf::VERSION
   spec.authors       = ["hoshinotsuyoshi"]
   spec.email         = ["guitarpopnot330@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.summary       = "same name scope of."
+  spec.description   = ""
   spec.homepage      = ""
   spec.license       = "MIT"
 
